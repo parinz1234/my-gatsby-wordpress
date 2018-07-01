@@ -3,12 +3,13 @@
   "description": "Gatsby hello world starter",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --port 8080",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
   "dependencies": {
     "gatsby": "^1.9.250",
-    "gatsby-link": "^1.6.40"
+    "gatsby-link": "^1.6.40",
+    "gatsby-source-wordpress": "^2.0.93"
   }
 }
