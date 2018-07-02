@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env`,
+});
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -26,6 +29,14 @@ module.exports = {
         // If useACF is true, then the source plugin will try to import the Wordpress ACF Plugin contents.
         // This feature is untested for sites hosted on Wordpress.com
         useACF: false,
+        verboseOutput: false,
+        auth: {
+          // If auth.user and auth.pass are filled, then the source plugin will be allowed
+          // to access endpoints that are protected with .htaccess.
+          htaccess_user: `${process.env.WORDPRESS_USER}`,
+          htaccess_pass: `${process.env.WORDPRESS_PASS}`,
+          htaccess_sendImmediately: false
+        }
       },
     }
   ]

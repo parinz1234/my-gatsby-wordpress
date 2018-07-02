@@ -8,8 +8,11 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^1.9.250",
+    "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.40",
     "gatsby-source-wordpress": "^2.0.93"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0"
   }
 }
