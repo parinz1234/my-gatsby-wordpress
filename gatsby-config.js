@@ -38,6 +38,13 @@ module.exports = {
           htaccess_sendImmediately: false
         }
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
     }
   ]
 }
