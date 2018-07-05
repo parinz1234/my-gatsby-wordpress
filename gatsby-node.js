@@ -26,8 +26,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               node {
                 id
                 slug
-                status
-                template
               }
             }
           }
@@ -75,8 +73,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     id
                     slug
                     status
-                    template
-                    format
                   }
                 }
               }
